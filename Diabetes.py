@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 # ===============================
 # Load Model & Files
 # ===============================
-model = load_model("diabetes_ann_model.h5")
+model = load_model("diabetes_ann_model.h5", compile=False)
 scaler = joblib.load("scaler.pkl")
 feature_names = joblib.load("features.pkl")
 
